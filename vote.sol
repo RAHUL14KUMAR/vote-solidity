@@ -22,7 +22,7 @@ contract voting{
         votingEnd=block.timestamp+(durationInMinutes *1 minutes);
 
         for(uint256 i=0;i<_name.length;i++){
-            candidates,push(Candidate({
+            candidates.push(Candidate({
                 name:_name[i];
                 voteCount:0;
             }))
